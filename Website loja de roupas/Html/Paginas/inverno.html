@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/Style.css" >
+    <title>Coleção de inverno</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div>
+            <button><img src="./icons/icon-menu-burguer.svg" alt="">
+            </button>
+        </div>
+        
+        <div>
+            <a href="../index.html">Home</a>
+            <a href="../Paginas/masc.html">Moda Masculina</a>
+            <a href="../Paginas/fem.html">Moda Feminina</a>
+            <a href="../Paginas/verao.html">Coleção de verão </a>
+            
+        </div>
+
+        <div>
+            <button><img src="./icons/icon-user.svg" alt="">    
+            </button>
+            <button><img src="./icons/icon-heart.svg" alt="">            
+            </button>
+            <button class="botao-carrinho" onclick="abrirCarrinho()">
+                <img class="carrinho" src="../../Images/icon-shopping-cart.png" alt="Carrinho">
+            </button>
+        </div>
+    </nav>  
+
+    <hr>
+
+    <div class="flex-container">
+        <p class="item-flex">Coleção de Inverno</p>
+    </div>
+
+    <div class="item-grid">
+        <a href="../../Html/Produtos/MoletomBranco.html">
+        <img class="grid-item-img"  src="../../Images/Moletom Branco.png" alt="Blusa Moletom">
+        <div class="descrip-price">
+            <p class="monserrat-tarjeta">Moletom Masculino</p>
+            <p class="monserrat-price">R$ 199,99</p>
+        </a>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="item-grid">
+            <a href="">
+            <img class="grid-item-img"  src="" alt="">
+            <div class="descrip-price">
+                <p class="monserrat-tarjeta"></p>
+                <p class="monserrat-price">34.99 R$</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="item-grid">
+            <a href="">
+            <img class="grid-item-img" src="" alt="">
+        
+            <div class="descrip-price">
+                <p class="monserrat-tarjeta"></p>
+                <p class="monserrat-price">44.99 R$</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="item-grid">
+            <a href="">
+            <img class="grid-item-img" src="" alt="">
+            <div class="descrip-price">
+                <p class="monserrat-tarjeta"></p>
+                <p class="monserrat-price">79.99 R$</p>
+            </a>
+            </div>
+        </div>
+
+        
+
+        <div class="item-grid">
+            <img class="grid-item-img" src="     " alt="">
+            <div class="descrip-price">
+                <p class="monserrat-tarjeta"></p>
+                <p class="monserrat-price">25.00 R$</p>
+            </div>
+        </div>
+
+        <div class="item-grid">
+            <img class="grid-item-img"  src="   " alt="">
+            <div class="descrip-price">
+                <p class="monserrat-tarjeta"></p>
+                <p class="monserrat-price">22.99 R$</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+     <footer class="footer-container">
+        <div class="footer-item">
+            <img src="./icons/icon-truck.svg" alt="">
+            <p class="footer-item">Entrega</p>
+        </div>
+        <div class="footer-item">
+            <p class="footer-item">Devoluções</p>
+        </div>
+        <div class="footer-item">
+            <img src="./icons/icon-phone.svg" alt="">
+            <p class="footer-item">+55 11 96199-7167</p>
+        </div>
+        <div class="footer-item">
+            <img src="./icons/icon-mail.svg" alt="">
+            <p class="footer-item">shop@surf.com</p>
+        </div>
+       
+    </div>
+    </footer>   
+
+    <!-- Sidebar do Carrinho -->
+<div id="sidebar-carrinho" class="sidebar">
+    <button class="close-btn" onclick="fecharCarrinho()">&times;</button>
+    <h2>Seu Carrinho</h2>
+    <div id="conteudo-carrinho">
+        <p>Seu carrinho está vazio.</p>
+    </div>
+
+    <!-- Container para o botão de limpar -->
+    <div class="footer-carrinho">
+        <button class="button limpar-carrinho-btn" onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+</div>
+   
+<script src="../../JavaScript/Script.js"></script>
+
+</body>
+</html>

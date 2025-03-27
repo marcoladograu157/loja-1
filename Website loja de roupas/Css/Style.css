@@ -1,0 +1,357 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+body {
+    font-family: "Montserrat";
+    padding: 90px 20px 0;
+}
+
+.carrinho {
+    width: 32px;  /* Defina um tamanho menor para o ícone */
+    height: 32px; /* Mantém a proporção */
+}
+
+.botao-carrinho {
+    background: none;  /* Remove o fundo do botão */
+    border: none;      /* Remove borda */
+    cursor: pointer;   /* Torna clicável */
+    padding: 5px;      /* Ajusta o espaçamento */
+}
+
+.footer-carrinho {
+    margin-top: auto; /* Empurra o botão para o final do sidebar */
+    padding-top: 20px;
+}
+
+/* Estilos do botão "Limpar Carrinho" */
+.limpar-carrinho-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.finalizar-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+    background-color: #45a049;
+}
+
+.limpar-carrinho-btn::before {
+    font-size: 18px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black; 
+    transition: all 0.3s ease;
+}
+
+.limpar-carrinho-btn::after {
+    font-size: 18px;
+    position: absolute;
+    right: -25px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: black; 
+    transition: all 0.3s ease;
+}
+
+.limpar-carrinho-btn:hover {
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #007bff;
+    border-color: #000000;
+}
+
+.limpar-carrinho-btn:hover::before {
+    left: -45px; 
+}
+
+.limpar-carrinho-btn:hover::after {
+    right: -45px; 
+}
+
+/* Efeito de hover */
+.limpar-carrinho-btn:hover {
+    background-color: black; /* Fundo preto quando passar o mouse */
+    color: white; /* Texto branco quando passar o mouse */
+    border-color: white; /* Borda branca quando passar o mouse */
+}
+
+/* Estilos do Sidebar do Carrinho */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Escondido inicialmente */
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+/* Quando a sidebar estiver ativa, ela vai se mover para a posição visível */
+.sidebar.ativo {
+    right: 0;
+}
+
+/* Estilos do botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos gerais do conteúdo da sidebar */
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #212429;
+}
+
+#conteudo-carrinho {
+    padding: 20px;
+    color: #212429;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    font-size: 12px;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #212429;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+
+.navbar Button {
+    border: none;
+    background-color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.item-flex {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+p.item-flex {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p.item-flex::first-letter {
+    font-size: 130%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.item-grid {
+    margin: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 300px;
+    height: auto;
+}
+
+.grid-item-img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.monserrat-title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 32px;
+}
+
+.descrip-price {
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.monserrat-tarjeta {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+.monserrat-price {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: bold;
+    color: black; 
+} 
+
+
+.footer-container {
+    display: flex;
+    background-color: black;
+    padding: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    flex: 1;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item p {
+    margin: 0.5rem 1rem;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.tamanhos {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.tamanho-btn {
+    padding: 8px 12px;
+    border: 2px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 10;
+    margin: 5px; /* Adiciona margem para melhorar o layout */
+}
+
+.tamanho-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.tamanho-btn.selecionado {
+    background-color: #000;
+    color: #fff;
+    z-index: 20; /* Aumenta o z-index do botão selecionado para garantir que ele fique em cima */
+}
+
+@media (max-width: 1130px) {
+    .image-container {
+        flex-direction: column; /* Empilha os itens em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .imagem-produto {
+        width: 80%; /* A imagem ocupa mais espaço em telas pequenas */
+        margin-right: 0; /* Remove o espaço à direita da imagem */
+        margin-bottom: 20px; /* Espaço abaixo da imagem */
+    }
+
+    .descricao-produto {
+        width: 100%; /* A descrição ocupa toda a largura disponível */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .nome-produto {
+        font-size: px; /* Ajusta o tamanho da fonte */
+    }
+
+    .preco-por-pix {
+        font-size: 18px;
+    }
+
+    .preco-em-parcelas {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
