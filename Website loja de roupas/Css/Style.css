@@ -1,27 +1,31 @@
-/* Fonte */
+/* ===== FONTE ===== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+/* ===== RESET GERAL ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* ===== LINKS ===== */
 a {
     text-decoration: none; /* Remove o sublinhado */
 }
 
+/* ===== BODY ===== */
 body {
     font-family: "Montserrat";
     padding: 90px 20px 0;
 }
 
+/* ===== ÍCONES ===== */
 .carrinho {
     width: 32px;  /* Defina um tamanho menor para o ícone */
     height: 32px; /* Mantém a proporção */
 }
 
+/* ===== BOTÕES ===== */
 .botao-carrinho {
     background: none;  /* Remove o fundo do botão */
     border: none;      /* Remove borda */
@@ -34,7 +38,7 @@ body {
     padding-top: 20px;
 }
 
-/* Estilos do botão "Limpar Carrinho" */
+/* ===== BOTÃO LIMPAR CARRINHO ===== */
 .limpar-carrinho-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -53,7 +57,7 @@ body {
     width: 100%;
 }
 
-
+/* ===== BOTÃO FINALIZAR ===== */
 .finalizar-btn {
     display: block;
     width: 100%;
@@ -72,13 +76,14 @@ body {
     background-color: #45a049;
 }
 
+/* ===== EFEITOS HOVER LIMPAR CARRINHO ===== */
 .limpar-carrinho-btn::before {
     font-size: 18px;
     position: absolute;
     left: -25px;
     top: 50%;
     transform: translateY(-50%);
-    color: black; 
+    color: black;
     transition: all 0.3s ease;
 }
 
@@ -107,14 +112,13 @@ body {
     right: -45px; 
 }
 
-/* Efeito de hover */
 .limpar-carrinho-btn:hover {
     background-color: black; /* Fundo preto quando passar o mouse */
     color: white; /* Texto branco quando passar o mouse */
     border-color: white; /* Borda branca quando passar o mouse */
 }
 
-/* Estilos do Sidebar do Carrinho */
+/* ===== SIDEBAR CARRINHO ===== */
 .sidebar {
     position: fixed;
     top: 0;
@@ -133,7 +137,7 @@ body {
     right: 0;
 }
 
-/* Estilos do botão de fechar */
+/* ===== BOTÃO DE FECHAR DA SIDEBAR ===== */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -144,7 +148,7 @@ body {
     cursor: pointer;
 }
 
-/* Estilos gerais do conteúdo da sidebar */
+/* ===== CONTEÚDO DA SIDEBAR ===== */
 .sidebar h2 {
     margin-bottom: 20px;
     font-size: 18px;
@@ -156,6 +160,7 @@ body {
     color: #212429;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
     overflow: hidden;
     position: fixed;
@@ -182,18 +187,21 @@ body {
     padding-right: 3rem;
 }
 
+/* ===== CONTAINER FLEX ===== */
 .flex-container {
     display: flex;
     background-color: white;
     margin-top: 2rem;
 }
 
+/* ===== ITENS NO CONTAINER FLEX ===== */
 .item-flex {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
 
+/* ===== TEXTO ITEM FLEX ===== */
 p.item-flex {
     text-transform: uppercase;
     font-family: "Montserrat";
@@ -206,6 +214,7 @@ p.item-flex::first-letter {
     font-size: 130%;
 }
 
+/* ===== GRID DE PRODUTOS ===== */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -215,6 +224,7 @@ p.item-flex::first-letter {
     gap: 2rem;
 }
 
+/* ===== ITEM DO GRID ===== */
 .item-grid {
     margin: 1rem;
     padding-right: 1rem;
@@ -223,6 +233,7 @@ p.item-flex::first-letter {
     height: auto;
 }
 
+/* ===== IMAGEM DO ITEM NO GRID ===== */
 .grid-item-img {
     max-width: 100%;
     border-radius: 10px;
@@ -230,6 +241,7 @@ p.item-flex::first-letter {
     margin-bottom: 1rem;
 }
 
+/* ===== TITULO MONSERRAT ===== */
 .monserrat-title {
     font-family: "Montserrat";
     font-size: 24px;
@@ -238,6 +250,7 @@ p.item-flex::first-letter {
     margin: 32px;
 }
 
+/* ===== DESCRIÇÃO E PREÇO ===== */
 .descrip-price {
     padding: 10px 15px;
     margin: 10px 0;
@@ -245,6 +258,7 @@ p.item-flex::first-letter {
     justify-content: space-between; 
 }
 
+/* ===== TEXTO PREÇO ===== */
 .monserrat-tarjeta {
     font-family: "Montserrat";
     font-size: 14px;
@@ -259,9 +273,9 @@ p.item-flex::first-letter {
     font-weight: 700;
     font-style: bold;
     color: black; 
-} 
+}
 
-
+/* ===== FOOTER ===== */
 .footer-container {
     display: flex;
     background-color: black;
@@ -275,12 +289,14 @@ p.item-flex::first-letter {
     left: 0;
 }
 
+/* ===== ITENS NO FOOTER ===== */
 .footer-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* ===== TEXTO FOOTER ===== */
 .footer-item p {
     margin: 0.5rem 1rem;
     color: white;
@@ -290,6 +306,7 @@ p.item-flex::first-letter {
     font-size: 1rem;
 }
 
+/* ===== SELEÇÃO DE TAMANHOS ===== */
 .tamanhos {
     display: flex;
     gap: 10px;
@@ -318,6 +335,7 @@ p.item-flex::first-letter {
     z-index: 20; /* Aumenta o z-index do botão selecionado para garantir que ele fique em cima */
 }
 
+/* ===== MEDIA QUERIES ===== */
 @media (max-width: 1130px) {
     .image-container {
         flex-direction: column; /* Empilha os itens em telas pequenas */
